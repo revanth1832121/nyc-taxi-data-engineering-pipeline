@@ -21,42 +21,8 @@ The pipeline was designed around common production data engineering requirements
 
 ## Architecture
 
-                  NYC Taxi Source Data
-                              |
-                              v
-                     +----------------+
-                     |  Source Layer  |
-                     |  source_trips  |
-                     +-------+--------+
-                             |
-                      Data Validation
-                             |
-                 +-----------+-----------+
-                 |                       |
-              Valid                    Invalid
-                 |                       |
-                 v                       v
-        +----------------+       +----------------+
-        |  Silver Layer  |       |   Quarantine   |
-        | curated_trips  |       | rejected_trips |
-        +-------+--------+       +----------------+
-                |
-                | Dimension Enrichment
-                v
-        +----------------------+
-        |      Gold Layer      |
-        | fact_taxi_trips_     |
-        | enriched             |
-        +----------+-----------+
-                   |
-                   v
-        +----------------------+
-        | Audit & Monitoring   |
-        | Data Quality Checks  |
-        | Reconciliation       |
-        | Pipeline Health      |
-        +----------------------+
 
+![NYC Taxi Data Engineering Pipeline Architecture](NYC Taxi Data Engineering Pipeline.png)
 
 ## Technology Stack
 
