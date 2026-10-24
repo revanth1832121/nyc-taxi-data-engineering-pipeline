@@ -22,7 +22,7 @@ The pipeline was designed around common production data engineering requirements
 ## Architecture
 
 
-![NYC Taxi Data Engineering Pipeline Architecture](NYC Taxi Data Engineering Pipeline.png)
+![NYC Taxi Data Engineering Pipeline Architecture](architecture.png)
 
 ## Technology Stack
 
