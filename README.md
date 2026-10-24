@@ -125,6 +125,12 @@ The monitoring layer checks:
 
 The completed pipeline produced the following validation results:
 
+### Databricks Execution Result
+
+The following output shows the final end-to-end pipeline health validation executed in Databricks.
+
+![Databricks Pipeline Health Result](pipeline_health.png)
+
 | Metric | Result |
 |---|---:|
 | Source Records | 1,006 |
